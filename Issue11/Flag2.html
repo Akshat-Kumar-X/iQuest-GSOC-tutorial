@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the secret message 2</title>
+    <style>
+        #flag2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Solve this riddle and get the message:</h2>
+    <p>
+        I can be found on every board,<br>
+        Press me, and I'll help you soar.<br>
+        With a tap or hold, I create some space,<br>
+        What am I?
+    </p>
+    <p id="flag2">FLAG: CTF{QuestInno}</p>
+
+    <script>
+        let spaceTimer;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                spaceTimer = setTimeout(function() {
+                    document.getElementById('flag2').style.display = 'block';
+                }, 1000);  
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.code === 'Space') {
+                clearTimeout(spaceTimer); 
+            }
+        });
+    </script>
+</body>
+</html>
