@@ -399,7 +399,7 @@ section.freelancer h1 {
 
 .elem,
 .rotate-img {
-  animation: rotate360 2s linear ;
+  display: none;
 }
 
 .hero {
@@ -1042,7 +1042,7 @@ textarea.contact-input {
     bottom: -60px;
     left: -60px;
     width: 120px;
-    animation: rotate360 linear infinite reverse;
+    animation: rotate360 linear  2s infinite reverse;
   }
 
   @keyframes rotate360 {
