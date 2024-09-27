@@ -399,7 +399,7 @@ section.freelancer h1 {
 
 .elem,
 .rotate-img {
-  display: none;
+  animation: rotate360 2s linear ;
 }
 
 .hero {
