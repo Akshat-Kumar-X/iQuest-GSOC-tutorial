@@ -269,6 +269,10 @@ section.services .card-wrapper .card p {
 section.services .card-wrapper .card:hover {
   background: rgb(36, 36, 36);
 }
+section.services .card-wrapper .card h2,
+section.services .card-wrapper .card p {
+  color: rgb(42,42,42);
+}
 section.services .card-wrapper .card:hover h2,
 section.services .card-wrapper .card:hover p {
   color: white;
