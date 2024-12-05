@@ -24,18 +24,18 @@
         let spaceTimer;
 
         document.addEventListener('keydown', function(event) {
-            if (event.code === 'Space') {
+            if (event.key === 'Space') {
                 spaceTimer = setTimeout(function() {
                     document.getElementById('flag2').style.display = 'block';
                 }, 1000);  
             }
         });
 
-        document.addEventListener('keyup', function(event) {
-            if (event.code === 'Space') {
-                clearTimeout(spaceTimer); 
-            }
-        });
+        // document.addEventListener('keyup', function(event) {
+        //     if (event.key === 'Space') {
+        //         clearTimeout(spaceTimer); 
+        //     }
+        // });
     </script>
 </body>
 </html>
