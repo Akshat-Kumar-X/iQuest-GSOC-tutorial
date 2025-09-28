@@ -56,7 +56,7 @@
    * spacing
    */
 
-  --section-padding: 60px;
+  --section-padding: 50px;
 
   /**
    * shadow
@@ -175,6 +175,7 @@ body {
 
 .container {
   padding-inline: 20px;
+  color: #92b8e6;
 }
 
 .btn {
