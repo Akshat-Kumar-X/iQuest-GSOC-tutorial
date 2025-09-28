@@ -16,6 +16,10 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
+document.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
+
 const backTopBtn = document.querySelector("[data-back-to-top]");
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 100 && Math.random() > 0.3) {
@@ -45,6 +49,8 @@ ScrollReveal().reveal(".aniSmall", {
   origin: "right",
   duration: 1500,
 });
+
+
 
 ScrollReveal().reveal(".p1, .p3", { delay: 350, origin: "left" });
 ScrollReveal().reveal(".p2, .p4", { delay: 350, origin: "right" });
