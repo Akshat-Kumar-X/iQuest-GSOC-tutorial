@@ -4,8 +4,8 @@ const header = document.querySelector("[data-header]");
 
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 navToggleBtn.addEventListener("click", function () {
-  // header.classList.toggle("nav-active");
-  // this.classList.toggle("active");
+  header.classList.toggle("nav-active");
+  this.classList.toggle("active");
 });
 
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
@@ -16,9 +16,17 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
+
+document.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
+
+function ignore(){
+
+}
 const backTopBtn = document.querySelector("[data-back-to-top]");
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 100 && Math.random() > 0.3) {
+  if (window.scrollY >= 100) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
   } else {
