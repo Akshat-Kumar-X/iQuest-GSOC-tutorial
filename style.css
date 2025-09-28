@@ -834,13 +834,17 @@ textarea.contact-input {
  * responsive for larger than 600px screen
  */
 
+ @media (max-width: 600px) {
+  .portfolio-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 600px) {
   /**
    * PORTFOLIO
    */
-  .portfolio-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .portfolio-list li:nth-child(even) .card-content {
     margin-inline-start: 50%;
   }
