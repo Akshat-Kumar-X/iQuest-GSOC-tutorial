@@ -21,9 +21,6 @@ document.addEventListener('submit', function(event) {
         event.preventDefault();
     });
 
-function ignore(){
-
-}
 const backTopBtn = document.querySelector("[data-back-to-top]");
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 100) {

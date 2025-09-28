@@ -396,10 +396,15 @@ section.freelancer h1 {
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
-
-.elem,
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+.elem {
+  display: none;
+}
 .rotate-img {
   display: none;
+  animation: spinner 1.5s linear infinite; 
 }
 
 .hero {
