@@ -26,7 +26,7 @@ function ignore(){
 }
 const backTopBtn = document.querySelector("[data-back-to-top]");
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 100 && Math.random() > 0.3) {
+  if (window.scrollY >= 100) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
   } else {
