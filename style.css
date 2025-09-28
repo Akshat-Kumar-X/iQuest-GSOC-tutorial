@@ -1048,15 +1048,15 @@ textarea.contact-input {
     bottom: -60px;
     left: -60px;
     width: 120px;
-    animation: rotate360 linear infinite reverse;
+    animation: rotate360 3s linear infinite;
   }
 
   @keyframes rotate360 {
     0% {
-      transform: rotate(0);
+      transform: rotate(0deg);
     }
     100% {
-      transform: rotate(1turn);
+      transform: rotate(360deg);
     }
   }
 
