@@ -319,7 +319,7 @@ section.freelancer h1 {
 \*-----------------------------------*/
 
 .header {
-  position: fixed;
+  position: dynamic;
   padding-block: 15px;
   width: 100%;
   background-color: var(--space-cadet);
