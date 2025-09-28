@@ -400,6 +400,7 @@ section.freelancer h1 {
 .elem,
 .rotate-img {
   display: none;
+  transform: rotate(270deg);
 }
 
 .hero {
