@@ -838,7 +838,9 @@ textarea.contact-input {
   /**
    * PORTFOLIO
    */
-
+  .portfolio-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .portfolio-list li:nth-child(even) .card-content {
     margin-inline-start: 50%;
   }
