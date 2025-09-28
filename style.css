@@ -319,15 +319,15 @@ section.freelancer h1 {
 \*-----------------------------------*/
 
 .header {
-  position: fixed;
-  padding-block: 15px;
+  position: sticky;
+  top: 0;
   width: 100%;
+  z-index: 1000;
   background-color: var(--space-cadet);
   height: 65px;
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
-  z-index: 4;
 }
 
 .header.nav-active {
@@ -362,9 +362,7 @@ section.freelancer h1 {
 }
 
 .navbar {
-  position: absolute;
-  top: 65px;
-  left: 0;
+  /* Remove sticky positioning, let header handle stickiness */
   width: 100%;
   padding-inline: 20px;
   visibility: hidden;
